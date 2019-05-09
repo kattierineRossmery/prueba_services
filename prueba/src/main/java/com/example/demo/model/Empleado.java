@@ -7,27 +7,26 @@ import javax.persistence.Id;
 @Entity
 public class Empleado {
 
-	@Id
-	private int idEmpleado;
-	
-	@Column(name="dni", length = 50)
-	private String nombre;
+  @Id
+  private int idEmpleado;
 
-	public int getIdEmpleado() {
-		return idEmpleado;
-	}
+  @Column(name = "dni", length = 50)
+  private String nombre;
 
-	public void setIdEmpleado(int idEmpleado) {
-		this.idEmpleado = idEmpleado;
-	}
+  public int getIdEmpleado() {
+    return idEmpleado;
+  }
 
-	public String getNombre() {
-		return nombre;
-	}
+  public void setIdEmpleado(int idEmpleado) {
+    this.idEmpleado = idEmpleado;
+  }
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-	
-	
+  public String getNombre() {
+    return nombre;
+  }
+
+  public void setNombre(String nombre) {
+    this.nombre = nombre;
+  }
+
 }
